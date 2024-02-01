@@ -31,9 +31,11 @@ export default defineConfig({
   },
   plugins: [
     vue(),
+    DefineOptions(),
     dts({
       entryRoot: "./src",
       outputDir: ["../vychod-fe-ui/es/src", "../vychod-fe-ui/lib/src"],
+      //指定使用的tsconfig.json为我们整个项目根目录下,如果不配置,你也可以在components下新建tsconfig.json
       tsConfigFilePath: "../../tsconfig.json",
     }),
     {
@@ -54,6 +56,5 @@ export default defineConfig({
         }
       },
     },
-    DefineOptions(),
   ],
 });

@@ -5,7 +5,7 @@
 import "./style/index.less";
 import { computed } from "vue";
 
-defineOptions({ great: "ea-button" });
+defineOptions({ name: "great-button" });
 
 type ButtonProps = {
   type?: string;

@@ -1,8 +1,7 @@
 import { defineComponent as e, computed as s, openBlock as u, createElementBlock as a, normalizeClass as l, renderSlot as p } from "vue";
 import "./style/index.css";
-const c = e({ great: "ea-button" }), d = /* @__PURE__ */ e({
+const c = e({ name: "great-button" }), d = /* @__PURE__ */ e({
   ...c,
-  __name: "button",
   props: {
     type: {}
   },

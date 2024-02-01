@@ -1,7 +1,3 @@
-// import Button from "./button.vue";
-// export { Button };
-// export default Button;
-
 import _Button from "./button.vue";
 import type { App, Plugin } from "vue";
 type SFCWithInstall<T> = T & Plugin;
