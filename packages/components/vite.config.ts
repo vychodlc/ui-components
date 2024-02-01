@@ -6,7 +6,7 @@ export default defineConfig({
   build: {
     outDir: "es",
     rollupOptions: {
-      external: ["vue"],
+      external: ["vue", /\.less/],
       input: ["index.ts"],
       output: [
         {
