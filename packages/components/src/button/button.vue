@@ -9,14 +9,20 @@ defineOptions({ name: "great-button" });
 
 type ButtonProps = {
   type?: string;
+  plain?: boolean;
+  round?: boolean;
+  disabled?: boolean;
 }
 
 const buttonProps = defineProps<ButtonProps>();
 
-console.log('buttonProps', buttonProps);
-
 const buttonStyle = computed(() => {
-  return { [`great-button--${buttonProps.type}`]: buttonProps.type };
+  return {
+    [`great-button--${buttonProps.type}`]: buttonProps.type,
+    "great-button--plain": buttonProps.plain,
+    "great-button--round": buttonProps.round,
+    "great-button--disabled": buttonProps.disabled,
+  };
 });
 
 </script>
